@@ -29,3 +29,7 @@ Assuming you have a copy of EverQuest: Titanium Edition client in Windows:
 8. Switch back to Gaming Mode and enjoy!
 
 If you need some pointers on configuring Steam Input, I highly recommend watching this for tips, and inspiration: https://www.youtube.com/watch?v=eUmUdcRhM6g
+
+## Thanks
+
+Special thanks to [@Zaela](https://github.com/Zaela) for figuring out the issue and their original tool https://github.com/Zaela/eqemu-login-helper
