@@ -15,7 +15,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2809933598
 Assuming you have a copy of EverQuest: Titanium Edition client in Windows:
 
 1. Zip the EverQuest root folder in your Windows machine (the folder that contains `EverQuest.bat`), transfer it to your Steam Deck and unzip it somewhere in the home directory.
-2. In the Steam Deck Desktop Mode, open a browser and download [this Python script](/p99_login_helper.py) into your copy of the EverQuest root folder.
+2. In the Steam Deck Desktop Mode, open a browser and download (right click save as) [this Python script](https://raw.githubusercontent.com/rtrajano/p99_login_helper/main/p99_login_helper.py) into your copy of the EverQuest root folder.
     1. Make sure the script is executable. You can `chmod` it or navigate to the file in the file browser, right click the file > "Properties" > "Permissions" > and tick the "Is executable" checkbox.
 3. Navigate to your EverQuest root folder and modify `eqhost.txt` to point to `Host=localhost:5998` instead of what is currently in there.
 4. Open the desktop version of Steam. In the toolbar, click "Games" > "Add a Non-Steam Game to My Library" > "Browse" > Set "File type:" to "All Files"
@@ -30,6 +30,17 @@ Assuming you have a copy of EverQuest: Titanium Edition client in Windows:
 
 If you need some pointers on configuring Steam Input, I highly recommend watching this for tips, and inspiration: https://www.youtube.com/watch?v=eUmUdcRhM6g
 
+## Normal Linux Instructions
+
+1. Navigate to your EverQuest root folder and modify `eqhost.txt` to point to `Host=localhost:5998` instead of what is currently in there.
+2. You'll need a working Python 3 installation. Verify by typing `python3 --version` in a terminal. It should return with `Python 3.X.X`
+3. git clone this repo and start the script via `python3 ./p99_login_helper.py` in a separate terminal or as a background process.
+    1. It's only needed during login. Once in the game, you can end the process.
+
+## What the script does
+
+It makes a UDP server that acts as a proxy between the EQ client and the login server. The script is simple so you can inspect it yourself.
+
 ## Thanks
 
-Special thanks to [@Zaela](https://github.com/Zaela) for figuring out the issue and their original tool https://github.com/Zaela/eqemu-login-helper
+Special thanks to [@Zaela](https://github.com/Zaela) for figuring out the problem and their original tool https://github.com/Zaela/eqemu-login-helper
