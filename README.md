@@ -20,7 +20,7 @@ Assuming you have a copy of EverQuest: Titanium Edition client in Windows:
 3. Navigate to your EverQuest root folder and modify `eqhost.txt` to point to `Host=localhost:5998` instead of what is currently in there.
 4. Open the desktop version of Steam. In the toolbar, click "Games" > "Add a Non-Steam Game to My Library" > "Browse" > Set "File type:" to "All Files"
 5. In the file selection dialog, navigate to your EverQuest root folder and select `EverQuest.bat`
-6. Copy Paste this into the "Launch Options" box: `flatpak run org.rncbc.qsynth & timeout 5m ./login_helper.py & %command% ; killall -9 qsynth`
+6. Copy Paste this into the "Launch Options" box: `flatpak run org.rncbc.qsynth & timeout 5m ./p99_login_helper.py & %command% ; killall -9 qsynth`
     1. This command will start the qsynth service
     2. Start the p99_login_helper.py with a 5 minute timeout so it's not running forever. If you need to logout and back in, just exit EQ altogether.
     3. Start EQ
